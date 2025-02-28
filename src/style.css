@@ -1,5 +1,17 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: green;
+}
+
+#top-suit, #bottom-suit {
+    font-size: 5rem;
+
+}
+#bottom-suit {
+    transform: rotatex(0.5turn);
+}
+
+#card-number {
+    font-size: 5rem;
 }
