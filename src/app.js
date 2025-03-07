@@ -66,3 +66,15 @@ function stopGenerator(){
 
 document.getElementById("btnStart").addEventListener('click', autoGenerate);
 document.getElementById("btnStop").addEventListener('click', stopGenerator);
+
+function updateSize(){
+  const card = document.getElementById("card");
+  const height = document.getElementById("customHeight").value;
+  const width = document.getElementById("customWidth").value;
+
+  card.style.width = width ? `${width}px` : '20rem';
+  card.style.height = height ? `${height}px` : '30rem';
+}
+
+document.getElementById("customHeight").addEventListener('change', updateSize);
+document.getElementById("customWidth").addEventListener('input', updateSize);
